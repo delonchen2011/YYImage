@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hhp-Mq-3BH" customClass="YYAnimatedImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="310"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hhp-Mq-3BH" secondAttribute="height" multiplier="750:620" id="vWn-QG-m5a"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVr-P3-vFu">
+                                <rect key="frame" x="148" y="537" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gEZ-1F-as7"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="b0.png" translatesAutoresizingMaskIntoConstraints="NO" id="RwH-r9-ziV">
+                                <rect key="frame" x="0.0" y="195" width="375" height="115"/>
+                                <metadata>
+                                    <string key="libraryAssetSourceID">Xcode.InterfaceBuilderKit.CocoaTouchIntegration.ObjectLibraryAssetProvider:IBUIImageView</string>
+                                </metadata>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Crx-Um-Alm" customClass="YYAnimatedImageView">
+                                <rect key="frame" x="0.0" y="195" width="375" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Crx-Um-Alm" secondAttribute="height" multiplier="750:230" id="hT2-YL-WXx"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hhp-Mq-3BH" secondAttribute="trailing" id="3p6-oe-3EI"/>
+                            <constraint firstItem="hhp-Mq-3BH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5u5-6Q-ryd"/>
+                            <constraint firstItem="Crx-Um-Alm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="L6t-VE-J5V"/>
+                            <constraint firstItem="RwH-r9-ziV" firstAttribute="trailing" secondItem="Crx-Um-Alm" secondAttribute="trailing" id="Lhu-KB-K7R"/>
+                            <constraint firstItem="RwH-r9-ziV" firstAttribute="bottom" secondItem="Crx-Um-Alm" secondAttribute="bottom" id="U6U-IJ-Jug"/>
+                            <constraint firstItem="RwH-r9-ziV" firstAttribute="top" secondItem="Crx-Um-Alm" secondAttribute="top" id="ay5-Jb-XM0"/>
+                            <constraint firstItem="Crx-Um-Alm" firstAttribute="bottom" secondItem="hhp-Mq-3BH" secondAttribute="bottom" id="bFX-VA-Jc9"/>
+                            <constraint firstItem="hhp-Mq-3BH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rML-Hr-FC8"/>
+                            <constraint firstItem="RwH-r9-ziV" firstAttribute="leading" secondItem="Crx-Um-Alm" secondAttribute="leading" id="s4X-h8-EOS"/>
+                            <constraint firstAttribute="trailing" secondItem="Crx-Um-Alm" secondAttribute="trailing" id="wsw-ZJ-hBn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="aVr-P3-vFu" id="aed-e5-iVg"/>
+                        <outlet property="imageView" destination="hhp-Mq-3BH" id="qk6-D6-3km"/>
+                        <outlet property="imageView0" destination="Crx-Um-Alm" id="APG-oh-zNA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="b0.png" width="750" height="210"/>
+    </resources>
+</document>
